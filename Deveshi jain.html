@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Deveshi ❤️</title>
+<style>
+body{
+margin:0;
+font-family:Poppins,Arial;
+background:linear-gradient(120deg,#ff9a9e,#fad0c4);
+color:white;
+text-align:center;
+}
+.container{padding:30px}
+h1{font-size:40px;text-shadow:0 0 10px pink}
+h2{font-size:28px}
+.typing{font-size:18px;margin:20px}
+img{
+width:80%;
+max-width:300px;
+border-radius:20px;
+margin:10px;
+box-shadow:0 0 15px rgba(0,0,0,.4)
+}
+.card{
+background:rgba(255,255,255,.15);
+padding:20px;
+border-radius:20px;
+margin-top:20px
+}
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+font-size:16px;
+background:#ff4d6d;
+color:white
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Happy Birthday 🎂</h1>
+<h2>Deveshi Jain 💖</h2>
+
+<p class="typing" id="type"></p>
+
+<div class="card">
+<p>
+My cute little <b>Otter 🦦</b><br>
+My sweet <b>Balbasaur 🌱</b><br>
+My naughty <b>Peppa Pig 🐷</b><br><br>
+
+You are my <b>lovee</b>, my <b>babyyy</b>,  
+my <b>mera bachaa</b> ❤️<br><br>
+
+From my cutest childhood smile  
+to my most beautiful today…  
+you are my forever 💫
+</p>
+</div>
+
+<button onclick="alert('I love you babyyy ❤️ Happy Birthday 🎂')">
+Click for Love 💘
+</button>
+</div>
+
+<script>
+let text="To the girl who grew from my cutest bachaa to my forever love ❤️";
+let i=0;
+function type(){
+if(i<text.length){
+document.getElementById("type").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,60);
+}}
+type();
+</script>
+</body>
+</html>
